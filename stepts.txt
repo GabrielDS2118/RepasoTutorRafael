@@ -17,3 +17,36 @@
     
     backend/package.json
         npm run start -> nodemon server.js
+
+
+3.Crear Usuarios ejemplos
+    Carpetas: (backend/)
+        data,modelos,controlador
+    
+    data/usuarios.js
+        Crear usuarios de ejemplo
+    
+    Crear bases de datos en Mongo Compass
+        Cycle4MinTic
+            DB -> RepasoRafaelDB
+            Collection-> usuarios
+            Import Data -> data/usuarios.js
+    
+    conexion.js
+        Ir al atlas y copiar uri para conectarse desde una aplicacion
+        Pegar uri en mongoose.connect()
+    
+    modelo/model_users.js
+        Crear schema y modelo de usuarios
+
+    Rutas:
+        router_users.js -> '/mostrar'
+        router.js -> usuarios
+        Poner rutas en servidor.js -> '/api'
+    
+
+4.Iniciar frontend
+
+    RepasoRafael/
+        npm install -g create-react-app
+        npx create-react-app frontend
